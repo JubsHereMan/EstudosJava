@@ -31,9 +31,13 @@ public class PatternMatcherTest05 {
 
 
 
-        String regex= "([a-zA-Z0-9\\._-])+ @([a-zA-Z])+";
-        String texto ="luffy@hotmail.com, 123jotaro@gmail.com, @!zoro@mail.br, teste@email.com, sakura@mail";
+        String regex= "([a-zA-Z0-9\\._-])+@([a-zA-Z])+(\\.([a-zA-z])+)+";
+        String texto ="luffy@hotmail.com, 123jotaro@gmail.com, @!zoro@mail.br, teste@email.com.br, sakura@mail ";
+        System.out.println("Email Valido");
 
+        // teste os dois 
+        System.out.println("@!zoro@mail.br".matches(regex));
+        System.out.println("zoro@mail.br".matches(regex));
 
 
         Pattern pattern = Pattern.compile(regex);
