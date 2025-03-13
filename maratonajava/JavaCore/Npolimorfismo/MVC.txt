@@ -1,0 +1,9 @@
+aqui nos iremos colocar um novo pacote
+até o momento só colocamos DOMAIN e TEST
+Agora vamos fazer algo que se chama arquitetura M V C
+onde nos separamos a nossa regra de negocio do nosso modelo com o que iremos vizualizar
+
+
+DOMAIN= modelo
+TEST= vizualizar
+SERVICE= service
