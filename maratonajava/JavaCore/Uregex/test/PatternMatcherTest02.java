@@ -17,7 +17,7 @@ public class PatternMatcherTest02 {
         // .> \W = tudo o que não dor incluso no \w (caracteres especiais)
 
 
-        String regex ="\\W";
+        String regex ="\\s";
 //        String texto ="abaaba";
         String texto2 ="@#hh_212 12gvh21";
 
